@@ -34,3 +34,14 @@ manager_department = input("Enter manager's department: ")
 developer_name = input("Enter developer's name: ")
 developer_id = int(input("Enter developer's employee ID: "))
 programming_language = input("Enter developer's programming language: ")
+
+# Create instances of Manager and Developer classes
+manager = Manager(manager_name, manager_id, manager_department)
+developer = Developer(developer_name, developer_id, programming_language)
+
+# Display employee information
+print("\nManager Information:")
+manager.display_info()
+print("\nDeveloper Information:")
+developer.display_info()
+
